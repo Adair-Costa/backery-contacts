@@ -1,0 +1,21 @@
+{
+  "name": "bakery-contacts",
+  "version": "1.0.0",
+  "description": "small bakery contacts ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "and",
+    "mongodb"
+  ],
+  "author": "Adair Costa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5"
+  }
+}

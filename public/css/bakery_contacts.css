@@ -1,0 +1,162 @@
+* {
+  /* box-shadow: inset 0px 0px 2px rgba(255, 0, 0, 0.8); */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/bakery-image.jpg");
+  background-repeat: no-repeat;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* left column */
+/* inputs */
+.left-column {
+  margin-bottom: 3rem;
+}
+.input-address {
+  height: 3rem;
+}
+.input-address::placeholder {
+  font-size: 1.2rem;
+}
+.input-name {
+  height: 3rem;
+}
+.input-name::placeholder {
+  font-size: 1.2rem;
+}
+.input-email {
+  height: 3rem;
+}
+.input-email::placeholder {
+  font-size: 1.2rem;
+}
+
+/* labels */
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* text-area */
+.text-message::placeholder {
+  font-size: 1.2rem;
+}
+
+/* button submit */
+.btn-submit {
+  background-color: #f5d7db;
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.2rem;
+}
+.btn-submit:hover {
+  background-color: #fff;
+}
+
+/* right column */
+.right-col {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* all div's */
+.location,
+.phone,
+.fax,
+.envelope {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1.2rem;
+  /* min-height: 20rem;
+    min-width: 18rem; */
+  padding: 4rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* location style */
+.location i,
+.phone i,
+.fax i,
+.envelope i {
+  color: #f5d7db;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.location h3,
+.phone h3,
+.fax h3,
+.envelope h3 {
+  color: rgb(190, 190, 190);
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.location p,
+.phone p,
+.fax p,
+.envelope a:not(a) {
+  color: rgb(190, 190, 190);
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.envelope a {
+  color: #f5d7db;
+  text-decoration: none;
+}
+.envelope a:hover {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+/* footer style */
+.col-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-developer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}
+.name-developer h1 {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+/* media queries */
+@media only screen and (max-width: 991px) {
+  .col-footer {
+    margin-bottom: 1.2rem;
+  }
+  .left-column {
+    margin-top: 2rem;
+  }
+}
