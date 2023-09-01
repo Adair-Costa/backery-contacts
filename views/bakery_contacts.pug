@@ -1,0 +1,91 @@
+doctype html 
+html 
+    head 
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Bakery Contacts
+
+        //- link do bootstrap css
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css'
+        rel='stylesheet' 
+        integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9' 
+        crossorigin='anonymous')
+
+        //- link do bootstrap icons
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css')
+
+        //- link de css
+        link(rel='stylesheet' href='../css/bakery_contacts.css')
+    body.min-vh-100.d-flex.flex-column.justify-content-center.align-items-center
+        div.container 
+            div.row.d-flex.align-items-center
+                form#form.col-sm-12.col-md-12.col-lg-5.col-xl-5.col-xxl-5.left-column
+                    div.row 
+                        div.col 
+                            label(for='email') Email
+                            input#email.form-control.input-email(type='email'
+                            placeholder='Enter a valid email address'
+                            required
+                            aria-label='Enter a valid email address')
+
+                        //- div.col
+                        //-     label(for='name') Name
+                        //-     input#name.form-control.input-name(type='text'
+                        //-     placeholder='Enter your name'
+                        //-     required
+                        //-     aria-label='Enter your name')
+                    
+                    div.mb-3
+                        label.form-label(for='subject') Subject
+                        input#subject.form-control.input-address(type="text"
+                        placeholder="Enter your subject"
+                        required)
+
+                    div.mb-3
+                        label.form-label(for='message') Message
+                        textarea#message.form-control.text-message(rows="5"
+                        placeholder="Enter your message"
+                        required)
+
+                    div.d-grid.gap-2
+                        button(type='submit' class='btn-submit') Submit
+
+                div.col-sm-12.col-md-12.col-lg-7.col-xl-7.col-xxl-7.right-col
+                    div.row
+                        div.col
+                            div.location 
+                                i.bi.bi-geo-alt-fill
+                                h3 Our Main Office
+                                p Street Birmingham
+                        div.col
+                            div.phone 
+                                i.bi.bi-telephone-fill
+                                h3 Phone Number
+                                p +44 9356209563
+
+                    div.row
+                        div.col 
+                            div.fax 
+                                i.bi.bi-telegram
+                                h3 Fax 
+                                p 935-620-95-63
+                        div.col
+                            div.envelope 
+                                i.bi.bi-envelope
+                                h3 Email 
+                                a(href="#") hello@bakery.com
+
+            div.row 
+                div.col-12.col-footer 
+                    div.name-developer
+                        h1 Developed by Adair Costa 
+                            i.bi.bi-c-circle
+
+    //- script do bootstrap
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' 
+    integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' 
+    crossorigin='anonymous')
+
+    //- script javascript 
+    script(src='../javascript/bakery_contacts.js')
